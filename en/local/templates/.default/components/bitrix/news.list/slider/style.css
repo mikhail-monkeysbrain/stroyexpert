@@ -1,0 +1,70 @@
+.sl-box {overflow:hidden; background:#585858; padding:2% 156%; margin:2% -156%; color:#fff;}
+.sl-box a {color:#fff;}
+.sl-left-part .sl-title a {text-transform:uppercase;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+.sl-left-part .sl-title a:hover {color:#08C;}
+.sl-left-part .sl-title .undertext {padding-bottom:10px; display:block;}
+
+.sl-left-part img:hover, .sl-right-part img:hover {scale:1;}
+
+.sl-left-part, .sl-right-part {float:left; width:50% !important;}
+.sl-right-part {float:right;
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    -ms-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+}
+.sl-right-part {overflow:hidden; position:relative;}
+.sl-right-part .sl-container {position:absolute; left:-50%; top:0; bottom:0; white-space:nowrap;}
+.sl-right-part a {overflow:hidden; display:block; float:left; height:100%; position:relative; background:#585858;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.sl-right-part a img {text-align:right; position:absolute; top:0; right:2px; bottom:0; height:100%; max-width:900px; width:auto; opacity:0.45;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+.sl-right-part a:last-child img {right:0;}
+.sl-right-part a:hover img,
+.sl-right-part a.sl-act img {opacity:1;}
+.sl-right-part .sl-container {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+
+.owl-item.active img {border-right:2px solid #585858;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.owl-prev, .owl-next {color:#fff;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+.owl-prev:hover, .owl-next:hover {color:#08C;}
+.owl-prev {float:left;}
+.owl-next {float:right;}
+.owl-nav {overflow:hidden;}
+
+@media only screen and (max-width: 800px) {
+    .sl-box {padding:2% 10px; margin:0;}
+    .sl-left-part, .sl-right-part {float:none; width:100% !important;}
+    .sl-right-part {margin-bottom:20px}
+}

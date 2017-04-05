@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Î&nbsp;ÊÎÌÏÀÍÈÈ", 
+		"company/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"ÓÑËÓÃÈ", 
+		"services/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"ÏÐÎÅÊÒÛ", 
+		"project/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"ÎÁÚÅÊÒÛ", 
+		"object/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"ÍÎÂÎÑÒÈ", 
+		"news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"ÊÎÍÒÀÊÒÛ", 
+		"contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

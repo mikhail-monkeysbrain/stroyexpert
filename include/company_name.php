@@ -1,0 +1,1 @@
+<img style="margin-top:10px;" src="/bitrix/images/logo1.png" height="200px" width="250px" alt="" />

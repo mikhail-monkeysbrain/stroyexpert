@@ -1,0 +1,1 @@
+<img src="/img/contacts.jpg" style="width: 325px; height: 170px;">

@@ -1,0 +1,33 @@
+Нужно на кнопки повесить 
+на выбор 1 или 2 вариант в зависимости как там сделано, чтобы без путаницы было:)
+
+/personal/order/make/
+Повесить на кнопку оформить заказ
+
+onclick="yaCounter28100439.reachGoal('YA_ORDER', yaParams); return true;"
+или
+onsubmit="yaCounter28100439.reachGoal('YA_ORDER', yaParams); return true;"
+
+
+/personal/order/make/?ORDER_ID=XXX
+Повесить на кнопку оплатить
+
+onclick="yaCounter28100439.reachGoal('OPLATA', yaParams); return true;"
+или
+onsubmit="yaCounter28100439.reachGoal('OPLATA', yaParams); return true;"
+
+
+Будет типа того:
+<input type="button" onclick="yaCounterXXXXXX.reachGoal('ORDER'); return true;" value="Заказать" />
+
+/personal/order/
+Кнопка отмена
+
+onclick="yaCounter28100439.reachGoal('CANCEL', yaParams); return true;"
+или
+onsubmit="yaCounter28100439.reachGoal('CANCEL', yaParams); return true;"
+
+Кнопка повтор
+onclick="yaCounter28100439.reachGoal('COPY', yaParams); return true;"
+или
+onsubmit="yaCounter28100439.reachGoal('COPY', yaParams); return true;"

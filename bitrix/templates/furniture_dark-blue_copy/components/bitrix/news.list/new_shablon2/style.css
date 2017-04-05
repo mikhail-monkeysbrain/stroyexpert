@@ -1,0 +1,26 @@
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+
+
+.stroy_montaj_job .news-list .news-item a{
+color:#898989 !important;
+}
+
+.stroy_montaj_job .news-list .news-item small{
+color:#898989 !important;
+}
+
+
+
+.stroy_montaj_job .news-list .news-item a:hover{
+color:#008DD2 !important;
+text-decoration:none;
+}
+

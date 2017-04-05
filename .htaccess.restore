@@ -1,0 +1,40 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+	php_flag allow_call_time_pass_reference 1
+	php_flag session.use_trans_sid off
+
+	#php_value display_errors 1
+
+	#php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
+	Redirect 301 /project/mnogokv_zhil_doma/ http://stroyexpert.pro/services/kompleksnoe-proektirovanie/proektirovanie-mnogokvartirnih-domov/
+	Redirect 301 /project/kpmerch_nedvizh/ http://stroyexpert.pro/services/kompleksnoe-proektirovanie/proektirovanie-torgovyh-centrov/
+	Redirect 301 /project/administr_ofisnie_zdaniya/ http://stroyexpert.pro/services/kompleksnoe-proektirovanie/proektirovanie-mnogofunkcionalnyh-kompleksov/
+	Redirect 301 /project/sklad_kompleksi/ http://stroyexpert.pro/services/kompleksnoe-proektirovanie/proektirovanie-skladov/
+	Redirect 301 /project/proizv_zdaniya_sooruzheniya/ http://stroyexpert.pro/services/kompleksnoe-proektirovanie/proektirovanie-skladov/
+
+
+</IfModule>
+
+<IfModule mod_dir.c>
+	DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresByType image/jpeg "access plus 3 day"
+	ExpiresByType image/gif "access plus 3 day"
+</IfModule>

@@ -1,0 +1,1 @@
+<img style="width:100%;" src="/img/stroyexpert_vakansii_.jpg" height="277" width="500">

@@ -1,0 +1,1 @@
+<a target="_blank" href="/services/stroitelno-montazhnye-raboty/vitrazhnoe osteklenie_fasadi.pdf" download>ярпнхрекэмн - лнмрюфмше пюанрш</a>

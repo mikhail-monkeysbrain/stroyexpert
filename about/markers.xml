@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<markers>
+
+
+<marker>
+<name>Бизнес-центр «Куратов»</name>
+<address>г Сыктывкар, ул. Куратова</address>
+<lat>61.665448</lat>
+<lng>50.835219</lng>
+<src>/upload/</src>
+<color>blue</color>
+<active>Y</active>
+<text>rftyrtytrytrytrytrytrytr</text>
+</marker>
+
+
+<marker>
+<name>Оазис, ООО &quot;Лига&quot;</name>
+<address> г. Нижний Новгород,  Печеры сл., 177, Гребной канал</address>
+<lat>56.329918</lat>
+<lng>44.009193</lng>
+<src>/upload/iblock/e07/e07ef01aa207273b97261aeac8851e84.png</src>
+<color>blue</color>
+<active>Y</active>
+<text>rftyrtytrytrytrytrytrytr</text>
+</marker>
+
+<marker>
+<name>Крона, кафе, ООО</name>
+<address> г. Нижний Новгород,  Гагарина пр., 25 б</address>
+<lat>56.294853</lat>
+<lng>43.975372</lng>
+<src>2</src>
+<color>red</color>
+<active>Y</active>
+</marker>
+
+<marker>
+<name>Shizgara, караоке-клуб, ООО</name>
+<address> г. Нижний Новгород,  Рождественская ул., 20</address>
+<lat>56.328667</lat>
+<lng>43.990444</lng>
+<src>3</src>
+<color>red</color>
+<active>Y</active>
+</marker>
+
+<marker>
+<name>Cafe, ИП Ушакова Е. В.</name>
+<address> г. Нижний Новгород,  М. Ямская ул., 78 а</address>
+<lat>56.306511</lat>
+<lng>43.980701</lng>
+<src>4</src>
+<color>green</color>
+<active>Y</active>
+</marker>
+
+    <marker>
+        <name>Cafe, ИП Ушакова Е. В.</name>
+        <address> г. Нижний Новгород,  М. Ямская ул., 78 а</address>
+        <lat>56.306511</lat>
+        <lng>43.980701</lng>
+        <src>4</src>
+        <color>red</color>
+<active>Y</active>
+    </marker>
+
+</markers>

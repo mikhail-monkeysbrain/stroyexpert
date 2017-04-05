@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<markers>
+
+
+<marker>
+<name>Бизнес-центр «Куратов»</name>
+<address>г Сыктывкар, ул. Куратова</address>
+<lat>61.665448</lat>
+<lng>50.835219</lng>
+<src>/upload/iblock/b40/b40130ab51531837c50bb498e790e4f1.jpg</src>
+<color>black</color>
+<active>Y</active>
+<text></text>
+</marker>
+
+
+<marker>
+<name>Многоквартирный жилой дом</name>
+<address>г. Вологда ,ул. Карла Маркса</address>
+<lat>59.223498</lat>
+<lng>39.922238</lng>
+<src>/upload/iblock/44b/44b0544cf432173366d5f85707b3e9e1.jpg</src>
+<color>black</color>
+<active>Y</active>
+<text></text>
+</marker>
+
+
+<marker>
+<name>Жилой дом</name>
+<address>г. Сыктывкар, ул. Карла Маркса - ул. Крутая</address>
+<lat>61.677217</lat>
+<lng>50.819586</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Холодильно-складской комплекс</name>
+<address>Смоленская область, г. Гагарин, ул. Молодежная</address>
+<lat>55.563924</lat>
+<lng>34.983308</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Многоквартирный жилой дом</name>
+<address>г. Вологда, ул. Восточная</address>
+<lat>59.197216</lat>
+<lng>39.846096</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+<marker>
+<name>Многоквартирный жилой дом</name>
+<address>Республики Коми, Усть-Вымский район, пгт. Жешарт, ул. Мира</address>
+<lat>62.096150</lat>
+<lng>49.593826</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+<marker>
+<name>Жилой дом №1</name>
+<address>г. Вологда, ул. Медуницинская</address>
+<lat>59.199650</lat>
+<lng>39.856583</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Жилой дом №2</name>
+<address>г. Вологда ,ул. Медуницинская</address>
+<lat>59.198553</lat>
+<lng>39.858442</lng>
+<src>/upload/</src>
+<color>blue</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Многофункциональный многоквартирный жилой комплекс</name>
+<address>г. Сочи, Курортный проспект</address>
+<lat>43.556696</lat>
+<lng>39.767173</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Жилой дом</name>
+<address>г. Сыктывкар, м. Давпон</address>
+<lat>61.656387</lat>
+<lng>50.820776</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Многоэтажный жилой комплекс</name>
+<address>г. Сыктывкар, Сысольское шоссе - Южная – Домны Каликовой - Октябрьский проспект </address>
+<lat>61.660908</lat>
+<lng>50.834395</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Многоквартирные жилые дома</name>
+<address>пгт. Коноша Архангельской области , ул. Молодёжная </address>
+<lat>60.978719</lat>
+<lng>40.273067</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Многоэтажный жилой дом</name>
+<address>г. Сыктывкар, ул. Папанина</address>
+<lat>61.681618</lat>
+<lng>50.812242</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+
+<marker>
+<name>Многоэтажный жилой дом</name>
+<address>г. Сосногорск, ул. Гоголя</address>
+<lat>63.603131</lat>
+<lng>53.869993</lng>
+<src>/upload/</src>
+<color>black</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Бизнес центр «Микс»</name>
+<address>г. Вологда</address>
+<lat>59.202035</lat>
+<lng>39.824803</lng>
+<src>/upload/</src>
+<color>grey</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Торговый центр «Кит»</name>
+<address>г. Вологда</address>
+<lat>59.216591</lat>
+<lng>39.929224</lng>
+<src>/upload/</src>
+<color>grey</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+
+<marker>
+<name>Медицинский центр «Вита»</name>
+<address>г. Вологда</address>
+<lat>59.216490</lat>
+<lng>39.919374</lng>
+<src>/upload/</src>
+<color>grey</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Торговый центр «Гала Центр»</name>
+<address>г. Вологда</address>
+<lat>59.216490</lat>
+<lng>39.919374</lng>
+<src>/upload/</src>
+<color>grey</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+
+<marker>
+<name>Многоквартирный жилой дом</name>
+<address>г. Вологда, ул. Карла Маркса</address>
+<lat>59.223729</lat>
+<lng>39.921981</lng>
+<src>/upload/</src>
+<color>grey</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Многоквартирный жилой дом</name>
+<address>г. Вологда, ул. Пречистинская</address>
+<lat>59.218283</lat>
+<lng>39.906399</lng>
+<src>/upload/</src>
+<color>grey</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+<marker>
+<name>Бассейн ЗАО « Белый ручей»</name>
+<address>Вологодская обл, Вытегорский р-н, п. Депо</address>
+<lat>60.916029</lat>
+<lng>36.849843</lng>
+<src>/upload/</src>
+<color>grey</color>
+<active>Y</active>
+<text>Описание</text>
+</marker>
+
+
+
+
+
+
+
+
+</markers>
