@@ -43,13 +43,29 @@ $p = $arResult["DISPLAY_ACTIVE_FROM"];
 	<?endif;?>
 
 
+<div class="share">
+	<p class="share__paragraph">поделиться в соц. сетях </p><span><a class="close__social">&#215;</a></span>
+	<br>
+	<a href=""><div class="sprite--icon__f"></div></a>
+	<a href=""><div class="sprite--icon__v"></div></a>
+	<a href=""><div class="sprite--icon__g"></div></a>
+	<a href=""><div class="sprite--icon__t"></div></a>
+	<a href=""><div class="sprite--icon__p"></div></a>
+</div>
+
 
 <!-- НАЗВАНИЕ И АДРЕС -->
-	<p style="color: #424242;font-size: 12px;line-height: 1;text-transform: uppercase;margin-bottom:15px;"><?=$arResult['NAME']?></p>
+	<p style="color: #424242;font-size: 12px;line-height: 1;text-transform: uppercase;margin-bottom:15px;">
+		<span class="float__left"><?=$arResult['NAME']?></span> 
+		<span class="float__right">
+			<span class="sprite--share"></span>
+			<a href="<?=$arResult[LIST_PAGE_URL]?>" class="sprite--more"></a>
+			<span class="clear"></span>
+		</span>
+	</p>
+	<div class="clear"></div>
 	<p style="color: #424242;font-size: 12px;line-height: 1;margin-bottom:15px;"><?=$arResult['PROPERTIES']['adress']['VALUE']?></p>
-
 <!-- /НАЗВАНИЕ И АДРЕС -->
-
 
 
 
@@ -158,20 +174,6 @@ foreach($arResult["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
 
 
 <script>
-
-
-
-
-	/*$('#btn1').click(function(){  
-                $.ajax({  
-					url: "/project/index.php",  
-                    cache: false,  
-                    success: function(html){  
-                        $("#content").html(html);  
-                    }  
-                });  
-});  */
-
 
 
 

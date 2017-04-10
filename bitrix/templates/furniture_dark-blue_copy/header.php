@@ -83,23 +83,37 @@ IncludeTemplateLangFile(__FILE__);
 
 
 					<div class="header_contacts">
-						<p class="tel">+7 (8172) 209 109<br>+7 (812) 907 5143</p>
-						<!--<p class="eng_rus_block">
-							<a class="printer"><span></span></a>
-							<a href="#" class="eng">English</a>
-							<a href="/" class="rus">Russia</a>
-						</p>-->
-						<a class="printer" style="background: transparent;"><i class="fa fa-print" aria-hidden="true"></i></a>
+						
 						<div class="soc">
 							<a href="https://business.facebook.com/stroyexpert.pro/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							<a href="https://www.instagram.com/stroyexpert.pro/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 							<a href="https://www.youtube.com/channel/UC-KvAiqcXTltA15KiUGKXPQ" target="blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+							&nbsp; &nbsp; &nbsp; &nbsp;
+							<a class="printer" style="background: transparent;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+							<p class="tel"><a href="tel:+78172209109"><i class="fa fa-phone" aria-hidden="true"></i> +7 (8172) 209 109</a> <a href="tel:+78129075143"><i class="fa fa-phone" aria-hidden="true"></i> +7 (812) 907 5143</a></p>
 						</div>
+
+						<div class="mobile flex">
+							<p class="tel">
+								<a href="tel:+78172209109"><i class="fa fa-phone" aria-hidden="true"></i> +7 (8172) 209 109</a> 
+								<a href="tel:+78129075143"><i class="fa fa-phone" aria-hidden="true"></i> +7 (812) 907 5143</a>
+							</p>
+								
+								<div class="burger-menu">
+								  <div class="burger"></div>  
+								</div>
+
+						</div>
+						</div>
+
 					</div>
-				</div>
 				<div class="menu">
-					<?$APPLICATION->IncludeComponent("bitrix:menu", "horizontal_multilevel3", Array(
+					<?$APPLICATION->IncludeComponent("bitrix:menu", "horizontal_multilevel4", Array(
 						"ROOT_MENU_TYPE" => "top",	// “ËÔ ÏÂÌ˛ ‰Îˇ ÔÂ‚Ó„Ó ÛÓ‚Ìˇ
 							"MENU_CACHE_TYPE" => "A",	// “ËÔ ÍÂ¯ËÓ‚‡ÌËˇ
 							"MENU_CACHE_TIME" => "3600",	// ¬ÂÏˇ ÍÂ¯ËÓ‚‡ÌËˇ (ÒÂÍ.)
@@ -113,13 +127,7 @@ IncludeTemplateLangFile(__FILE__);
 						),
 						false
 					);?>
-					<!--<ul>
-						<li><a>Œ&nbsp ŒÃœ¿Õ»»</a></li>
-						<li><a>”—À”√»</a></li>
-						<li><a>œ–Œ≈ “€</a></li>
-						<li><a>ÕŒ¬Œ—“»</a></li>
-						<li><a> ŒÕ“¿ “€</a></li>
-					</ul>-->
+				</div>
 				</div>
 				<div style="clear:both;"></div>
 			</div>
@@ -241,6 +249,14 @@ $('document').ready(function() {
 </script>
 
 
+<script>
+$(function(){
+	$(".burger-menu").click(function () {
+		$(this).toggleClass("menu-on");
+		$('.menu').toggle(500);
+	});
+})
+</script>
 
 
 

@@ -50,6 +50,20 @@ foreach($arResult as $arItem):?>
 <?if ($previousLevel > 1)://close last item tags?>
 	<?=str_repeat("</ul></li>", ($previousLevel-1) );?>
 <?endif?>
+<div class="small">
+	<br>
+	<div class="white__line"></div>
+	<br>
+	<div class="mobile flex">
+		<a href="https://business.facebook.com/stroyexpert.pro/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/stroyexpert.pro/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="https://www.youtube.com/channel/UC-KvAiqcXTltA15KiUGKXPQ" target="blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+		<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+		<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+	</div>
+</div>
 
 </ul>
 <div class="menu-clear-left"></div>

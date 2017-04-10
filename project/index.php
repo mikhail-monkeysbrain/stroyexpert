@@ -15,15 +15,13 @@ $APPLICATION->SetTitle("Проекты");
 	);*/?>
 	<div class="wrapper1" style="margin-top:0px;border-top: 1px solid #fff;">
 		<div class="otstup">
-			 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	".default",
-	array(
+			 <?$APPLICATION->IncludeComponent("bitrix:main.include", "pages", Array(
 	"AREA_FILE_SHOW" => "file",	// Показывать включаемую область
-		"AREA_FILE_SUFFIX" => "number1",	// Суффикс имени файла включаемой области
+		"AREA_FILE_SUFFIX" => "number1",
 		"EDIT_TEMPLATE" => "",	// Шаблон области по умолчанию
-		"PATH" => "/index_number1.php"
-	)
+		"PATH" => "/index_number1.php",	// Путь к файлу области
+	),
+	false
 );?>
 		</div>
 		<div style="clear:both;">

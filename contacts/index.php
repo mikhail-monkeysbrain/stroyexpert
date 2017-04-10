@@ -5,260 +5,53 @@ $APPLICATION->SetPageProperty("title", "| Контакты");
 $APPLICATION->SetTitle("Контакты");
 ?>
 
-
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
-<script>
-
-$(document).ready(function() {
-
-    var myLatLng = new google.maps.LatLng(59.229556, 39.914313);
-    MYMAP.init('#map', myLatLng, 15);
-
-
-        MYMAP.placeMarkers('markers.xml');
-
-});
-
-var MYMAP = {
-    map: null,
-    bounds: null
-}
-
-var MY_MAPTYPE_ID = 'mystyle';
-
-MYMAP.init = function(selector, latLng, zoom) {
-    var myOptions = {
-        zoom:zoom,
-        center: latLng,
-      	mapTypeControlOptions: {
-                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-                },
-        mapTypeId: MY_MAPTYPE_ID,
-		panControl: false,
-		zoomControl: false,
-		scaleControl: false,
-		disableDefaultUI: true
-    }
-    this.map = new google.maps.Map($(selector)[0], myOptions);
-    //this.bounds = new google.maps.LatLngBounds();
-
-	var stylez =  [
-                { "featureType": "landscape", "stylers": [
-                    { "visibility": "on" },
-                    { "hue": "#0800ff" },
-                    { "saturation": -100 },
-                    { "gamma": 1.54 },
-                    { "lightness": -44 } ] },
-
-                { "featureType": "water", "stylers": [
-                    { "visibility": "on" },
-                    { "hue": "#0011ff" },
-                    { "saturation": -100 } ] },
-
-                { "featureType": "poi.park", "stylers": [
-                    { "visibility": "on" },
-                    { "hue": "#2200ff" },
-                    { "saturation": -100 },
-                    { "lightness": -50 } ] },
-
-                { "featureType": "administrative.country", "elementType": "geometry", "stylers": [
-                    { "visibility": "on" },
-                    { "saturation": -100 },
-                    { "lightness": -28 } ] }
-            ];
-
-
-
-
-	var styledMapOptions = {name: "Мой стиль"};
-	this.jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
-	this.map.mapTypes.set(MY_MAPTYPE_ID, this.jayzMapType);
-
-}
-
-MYMAP.placeMarkers = function(filename) {
-    $.get(filename, function(xml){
-        $(xml).find("marker").each(function(){
-            var name = $(this).find('name').text();
-            var address = $(this).find('address').text();
-
-            // create a new LatLng point for the marker
-            var lat = $(this).find('lat').text();
-            var lng = $(this).find('lng').text();
-			var txt = $(this).find('text').text();
-			var src = $(this).find('src').text();
-			var active = $(this).find('active').text();
-			var color = $(this).find('color').text();
-            var point = new google.maps.LatLng(parseFloat(lat),parseFloat(lng));
-
-            // extend the bounds to include the new point
-            //MYMAP.bounds.extend(point);
-if(color=='black' && active=='Y') {
-			 var image = 'kompl.png';
-            var marker = new google.maps.Marker({
-                position: point,
-                map: MYMAP.map,
-				icon: image
-            });
-	//var host=document.location.hostname;
-	//var infoWindow = new google.maps.InfoWindow();
-	//var html='<div class="q1"><img src="http://'+host+src+'"><br /><strong>'+name+'</strong><br />'+address+'<br />'+txt+'</div>';
-
-
-            google.maps.event.addListener(marker, 'mouseover', function() {
-                infoWindow.setContent(html);
-                infoWindow.open(MYMAP.map, marker);
-            });
-
-			google.maps.event.addListener(marker, 'mouseout', function() {
-				infoWindow.close();
-			});
-            //MYMAP.map.fitBounds(MYMAP.bounds);
-		};
-
-
-
-
-if(color=='grey' && active=='Y') {
-			 var image = 'stroit.png';
-            var marker = new google.maps.Marker({
-                position: point,
-                map: MYMAP.map,
-				icon: image
-            });
-			var host=document.location.hostname;
-            var infoWindow = new google.maps.InfoWindow();
-            var html='<div class="q1"><img src="http://'+host+src+'">'
-			'<strong>'+name+'</strong><br />'+address+'<br />'+txt+
-				'</div>';
-            google.maps.event.addListener(marker, 'mouseover', function() {
-                infoWindow.setContent(html);
-                infoWindow.open(MYMAP.map, marker);
-            });
-
-			google.maps.event.addListener(marker, 'mouseout', function() {
-				infoWindow.close();
-			});
-
-            //MYMAP.map.fitBounds(MYMAP.bounds);
-		};
-
-
-
-
-
-if(color=='green' && active=='Y') {
-			 var image = 'icon_k3.png';
-            var marker = new google.maps.Marker({
-                position: point,
-                map: MYMAP.map,
-				icon: image
-            });
-			var host=document.location.hostname;
-            var infoWindow = new google.maps.InfoWindow();
-            var html='<strong>'+name+'</strong><br />'+address+'<br />'+txt+
-				'<img src="http://'+host+src+'">';
-            google.maps.event.addListener(marker, 'click', function() {
-                infoWindow.setContent(html);
-                infoWindow.open(MYMAP.map, marker);
-            });
-            //MYMAP.map.fitBounds(MYMAP.bounds);
-		};
-
-
-
-
-
-
-
-
-        });
-    });
-
-}
-
-
-		</script>
-
-
-
-
-
-
-
-
-
-
-
-<div style="width:100%;background-color:#fff;">
-
-<div id="map" style="width:100%;height:408px;margin-bottom:-128px;margin-top: 171px;"></div>
-
+<style>
+	.wrapper_new{
+		margin-top: 70px !important;
+	}
+</style>
 	<div class="wrapper_new" >
-			<div class="otstup">
-
-				<?/*$APPLICATION->IncludeComponent(
-								"bitrix:main.include", 
-								".default", 
-								array(
-									"AREA_FILE_SHOW" => "file",
-									"AREA_FILE_SUFFIX" => "karta_kontakti",
-									"EDIT_TEMPLATE" => "",
-									"PATH" => "/karta_kontakti.php"
-								),
-								false
-				);*/?>
-			</div>
-
-			<div class="otstup">
-				<?$APPLICATION->IncludeComponent(
-					"bitrix:main.include", 
-					".default", 
-					array(
-						"AREA_FILE_SHOW" => "file",
-						"AREA_FILE_SUFFIX" => "number1",
-						"EDIT_TEMPLATE" => "",
-						"PATH" => "/index_number1.php"
-					),
-					false
-				);?>
-			</div>
-
-
-			<div class="line_zagran" style="border-top:1px solid #ccc;width:500%;margin-top:30px;margin-left: -200%;"></div>
 
 			<div style="clear:both;"></div>
 			<div class="profil_d_block_copy_contact">
 				<div class="otstup">
 
 					<div class="profd_new"><p style="font-size:13px;color:#fff;text-align:right;padding: 5px 20px 5px 0;">КОНТАКТЫ КОМПАНИИ</p></div>
-					<div class="block_kontakti_banner">
-						<?$APPLICATION->IncludeComponent(
-										"bitrix:main.include", 
-										".default", 
-										array(
-											"AREA_FILE_SHOW" => "file",
-											"AREA_FILE_SUFFIX" => "contact_images",
-											"EDIT_TEMPLATE" => "",
-											"PATH" => "/contact_images.php"
-										),
-										false
-						);?>
+
+					<div class="block_kontakti" style="">
+						<div class="office slave__office">
+							<p class="ttu">представительство компании</p>
+							<br>
+							<p class="em"><span class="sprite--geo"></span> 196 240, г. Санкт - Петербург, ул. Костюшко,<br> 54, лит. А, пом. 3-Н</p>
+							<div class="clear"></div>
+							<br>
+							<p class="em"><span class="sprite--clock"></span> Время работы: <br> Пн.-Пт. с 08-00 до 18-00</p>
+							<div class="clear"></div>
+							<br>
+							<p class="em"><span class="sprite--mail"></span><a href="mailto:info@stroyexpert.pro">E-mail: info@stroyexpert.pro</a></p>
+							<img src="/sprite/spb.gif" alt="">
+						</div>
+						<div class="map__spb">
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2185411f9ae046fe455a6fc140a81058c7e127e6da81546269fb17903e30f239&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
 					</div>
 
 					<div class="block_kontakti" style="">
-							<?$APPLICATION->IncludeComponent(
-														"bitrix:main.include", 
-														".default", 
-														array(
-															"AREA_FILE_SHOW" => "file",
-															"AREA_FILE_SUFFIX" => "contact_contact",
-															"EDIT_TEMPLATE" => "",
-															"PATH" => "/contact_contact.php"
-														),
-														false
-							);?>
+						<div class="office slave__office">
+							<p class="ttu">головной офис компании</p>
+							<br>
+							<p class="em"><span class="sprite--geo"></span> <span class="em-5">160 014,  г. Вологда, ул. Карла Маркса, 31</span></p>
+							<div class="clear"></div>
+							<br>
+							<p class="em"><span class="sprite--clock"></span> Время работы: <br> Пн.-Пт. с 08-00 до 18-00</p>
+							<div class="clear"></div>
+							<br>
+							<p class="em"><span class="sprite--mail"></span><a href="mailto:info@stroyexpert.pro">E-mail: info@stroyexpert.pro</a></p>
+							<img src="/sprite/vol.gif" alt="">
+						</div>
+						<div class="map__spb">
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2185411f9ae046fe455a6fc140a81058c7e127e6da81546269fb17903e30f239&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
 					</div>
 
 					<div style="clear:both;"></div>

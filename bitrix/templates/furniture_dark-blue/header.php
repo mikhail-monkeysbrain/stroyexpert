@@ -27,6 +27,7 @@ IncludeTemplateLangFile(__FILE__);
 <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/bootstrap.min.js"></script>
 
 
+
 <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/jquery.bxslider.min.js"></script>
 <link href="<?=SITE_TEMPLATE_PATH?>/jquery.bxslider.css" type="text/css" rel="stylesheet" />
 
@@ -61,68 +62,43 @@ IncludeTemplateLangFile(__FILE__);
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 
 	<div class="wrapper">
-<style>
-	.header_contacts .printer {
-    	float: right;
-    	margin: 0;
-	}
-	.soc {
-	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: flex-end;
-	}
-	.soc a{
-		margin: 0 .15em;
-	}
-	.soc a.printer i{
-	    border: 0;
-	    font-size: 100%;
-	    margin-top: 5px;
-	}
-	.tel{
-		margin: .5em 0 1em;
-		width: 100%;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: flex-end;
-	}
-	.tel a{
-		color: rgb(67, 66, 66);
-		font-weight: 600;
-	}
-	.tel i, .tel i:hover{
-		border: 0;
-	}
-</style>
 
 		<div class="block1">
 			<div  id="wrapper_header" style="padding-left:10px;padding-right:10px;padding-top:10px;max-width:980px;min-width:200px;min-height:110px;max-height:260px;margin:0px auto; border:0px solid red">
 
 				<div class="flex">
 					<div class="logo">
-						<a href="/"><img style="max-width:90%;"  src="/bitrix/images/logo1.png" alt=""/></a>
+						<a href="/">
+							<img style="max-width:90%;"  src="/bitrix/images/logo1.png" alt=""/>
+						</a>
 					</div>
-
-
 					<div class="header_contacts">
-						
 						<div class="soc">
-							<a href="https://business.facebook.com/stroyexpert.pro/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="https://www.instagram.com/stroyexpert.pro/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="https://www.youtube.com/channel/UC-KvAiqcXTltA15KiUGKXPQ" target="blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
-							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
-							&nbsp; &nbsp; &nbsp; &nbsp;
-							<a class="printer" style="background: transparent;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-							<p class="tel"><a href="tel:+78172209109"><i class="fa fa-phone" aria-hidden="true"></i> +7 (8172) 209 109</a> <a href="tel:+78129075143"><i class="fa fa-phone" aria-hidden="true"></i> +7 (812) 907 5143</a></p>
+							<a href="https://business.facebook.com/stroyexpert.pro/" target="blank"><div class="sprite--icon__f"></div></a>
+							<a href="https://www.instagram.com/stroyexpert.pro/" target="blank"><div class="sprite--icon__i"></div></a>
+							<a href="https://www.youtube.com/channel/UC-KvAiqcXTltA15KiUGKXPQ" target="blank"><div class="sprite--icon__y"></div></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><div class="sprite--icon__g"></div></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><div class="sprite--icon__t"></div></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><div class="sprite--icon__p"></div></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><div class="sprite--icon__b"></div></a>
+							&nbsp; &nbsp; &nbsp;
+							<a class="printer" style="background: transparent;"><div class="sprite--pdf"></div></a>
+							<p class="tel">
+								<a href="tel:+78172209109"><span class="sprite--call"></span> +7 (8172) 209 109</a> 
+								<a href="tel:+78129075143"><span class="sprite--call"></span> +7 (812) 907 5143</a>
+							</p>
+						</div>
+						<div class="mobile flex">
+							<p class="tel">
+								<a href="tel:+78172209109"><span class="sprite--call"></span> +7 (8172) 209 109</a> 
+								<a href="tel:+78129075143"><span class="sprite--call"></span> +7 (812) 907 5143</a>
+							</p>
+							<div class="burger-menu">
+							  <div class="burger"></div>  
+							</div>
 						</div>
 					</div>
+
 				</div>
 				<div class="menu">
 					<?$APPLICATION->IncludeComponent("bitrix:menu", "horizontal_multilevel4", Array(
@@ -138,11 +114,23 @@ IncludeTemplateLangFile(__FILE__);
 						"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
 					),
 					false
-				);?>
+					);?>
 				</div>
-				<div style="clear:both;"></div>
 			</div>
+			<div style="clear:both;"></div>
 		</div>
+	</div>
+
+
+<script>
+$(function(){
+	$(".burger-menu").click(function () {
+		$(this).toggleClass("menu-on");
+		$('.menu').toggle(500);
+	});
+})
+
+</script>
 
 <script type="text/javascript">
 	/*$(document).ready(function(){

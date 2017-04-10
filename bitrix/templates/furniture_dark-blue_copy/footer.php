@@ -3,95 +3,71 @@ IncludeTemplateLangFile(__FILE__);
 ?>
 
 <div class="footer_wrapper">
-
-<div style="height:50px;width:100%;background-color:#fff;"></div>
-<div style="width:100%;/*margin-top:50px*/">
-				<div class="wrapper1" style="padding-left:10px;padding-right:10px;padding-top:25px;max-width:980px;min-width:300px;margin:0px auto; border:0px solid red;">
-					<div class="otstup">
-					<div style="width:100%">
-
-						<div class="footer_block1">
-							<p style="color:#585858; font-size:12px;margin-bottom:10px;">КОНТАКТЫ</p>
-							<div style="color:#585858;">
-								<?$APPLICATION->IncludeComponent(
-									"bitrix:main.include", 
-									".default", 
-									array(
-									"AREA_FILE_SHOW" => "file",
-									"AREA_FILE_SUFFIX" => "number5",
-									"EDIT_TEMPLATE" => "",
-									"PATH" => "/index_number5.php"
-									),
-									false
-								);?>
-							</div>
-						</div>
-
-						<div class="footer_block2">
-							<?$APPLICATION->IncludeComponent(
-								"bitrix:main.include", 
-								".default", 
-								array(
-								"AREA_FILE_SHOW" => "file",
-								"AREA_FILE_SUFFIX" => "number66",
-								"EDIT_TEMPLATE" => "",
-								"PATH" => "/index_number66.php"
-								),
-								false
-							);?>
-						</div>
-
-						<div class="footer_block3">
-							<div style="color:#585858;">
-								<?$APPLICATION->IncludeComponent(
-									"bitrix:main.include", 
-									".default", 
-									array(
-									"AREA_FILE_SHOW" => "file",
-									"AREA_FILE_SUFFIX" => "number6",
-									"EDIT_TEMPLATE" => "",
-									"PATH" => "/index_number6.php"
-									),
-									false
-								);?>
-							</div>
-						</div>
-					</div>
+	<div style="width:100%;margin-top:50px">
+		<div class="wrapper1" style="padding-left:10px;padding-right:10px;padding-top:25px;max-width:980px;min-width:300px;margin:0px auto;">
+			<div class="otstup">
+				<div class="full_flex">
+					<div class="footer_block1">
+							<a href="/services">УСЛУГИ</a>
+							<a href="#">&nbsp;</a>
+							<a href="/news">НОВОСТИ</a>
+							<a href="#">&nbsp;</a>
+							<a href="/vakanci/">ВАКАНСИИ</a>
+							<a href="#">&nbsp;</a>
+							<a href="/contacts/">КОНТАКТЫ</a>
 					</div>
 
+					<div class="footer_block2">
+						<a href="tel:+78172209109">
+							<span>г. Вологда </span>
+							<br>
+							<a href="#">&nbsp;</a>
+							<span class="sprite--call"></span> 
+							+7 (8172) 209 109 
+							<br>
+						</a>
+						<a href="tel:+78172209109">
+							<span>г. санкт-петербург</span>
+							<br>
+							<span class="sprite--call"></span>
+							 +7 (812) 907 5143
+							 <br>
+						</a>
+						<a class="mail" href="mailto:info@stroyexpert.pro"><br><span class="sprite--mail"></span> <span class="ttn">info@stroyexpert.pro</span></a>
+					</div>
 
-					<div style="clear:both;"></div>
+					<div class="footer_block3">
+						<form class="subscribe">
+							<p class="bold ttu tal">больше новостей в наших группах и почтовой рассылке</p>
+							<input class="subscribe" type="text" placeholder="Ваша электронная почта">
+							<br>
+							<button class="btn btn__subscribe">Подписаться</button>
+							<div class="clear"></div>
+						</form>				
+						<div class="flex">
+							<a href="https://business.facebook.com/stroyexpert.pro/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com/stroyexpert.pro/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a href="https://www.youtube.com/channel/UC-KvAiqcXTltA15KiUGKXPQ" target="blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+StroyexpertPro" target="blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+						</div>
+					</div>
 				</div>
 			</div>
-
-		
-
-
-
-
-			<div class="button_footer" style="width:100%;">
-				<div class="wrapper1 footer_grey">
-					<div class="news_vacans" style="max-width:155px;">
-						<a href="/news" class="news_vacans_1">НОВОСТИ</a>
-						<a href="/vakanci/" class="news_vacans_2">ВАКАНСИИ</a>
-					</div>
-					<div class="copy">
-						<p>Copyright &copy;"2015""STROYEXPERT.PRO"<br/>ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
-					</div>
-					<div class="socsety" style="max-width:170px;float:right;">
-						<a href="https://www.linkedin.com/company/stroyexpert-pro?trk=nav_account_sub_nav_company_admin" target="_blank" class="logotype5"></a>
-						<a href="https://instagram.com/stroyexpert.pro/" target="_blank" class="logotype4"></a>
-						<a href="https://www.facebook.com/pages/stroyexpertpro/627583477375411?ref=hl" target="_blank" class="logotype3"></a>
-						<!--<a class="logotype2"></a>-->
-						<a href="https://www.youtube.com/channel/UC-KvAiqcXTltA15KiUGKXPQ" target="_blank" class="logotype1"></a>
-						<div style="clear:both;"></div>
-					</div>
-				</div>	
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<div class="button_footer" style="width:100%;">
+		<div class="wrapper1 footer_grey">
+			<div class="copy">
+				<p> &copy; "2015""STROYEXPERT.PRO" ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
 			</div>
-
-
-</div><!--footer_wrapper-->
-
+		</div>	
+	</div>
+</div>
+<!--footer_wrapper-->
 
 	</div><!--закрывающий head-а-->
 
@@ -133,5 +109,22 @@ d.addEventListener("DOMContentLoaded", f, false);
 <noscript><div><img src="//mc.yandex.ru/watch/30925651" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 </div>
+
+
+
+
+
+<script>
+	$(function(){
+		$(".sprite--share").click(function(){
+			$(".share").show(500);
+		});
+		$(".close__social").click(function(){
+			$(".share").hide(500);
+		});
+	});
+</script>
+
+
 </body>
 </html>
